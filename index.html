@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Щасливі Лапки — Зоотовари</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container header__content">
+            <a href="#" class="logo">🐾 Щасливі Лапки</a>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#hero" class="menu__link">Головна</a></li>
+                    <li><a href="#categories" class="menu__link">Товари</a></li>
+                    <li><a href="#about" class="menu__link">Про нас</a></li>
+                    <li><a href="#reviews" class="menu__link">Відгуки</a></li> 
+                    <li><a href="#contact" class="menu__link">Контакти</a></li>
+                </ul>
+            </nav>
+            <button class="burger-menu">
+                <img src="img/menu.svg" alt="Меню" style="width: 24px;">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="hero" class="hero">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <h1 class="hero__title">Преміум товари для ваших пухнастих друзів</h1>
+                    <p class="hero__subtitle">
+                        Відкрийте для себе високоякісні натуральні товари для домашніх улюбленців, які підтримують здоров'я та щастя ваших коханих компаньйонів.
+                    </p>
+                    <a href="#categories" class="button button--accent">Почати покупки</a>
+                </div>
+                <div class="hero__image-container">
+                    <img src="img/hero-dog-model.jpg" alt="Щасливий собака на вулиці" class="hero__image">
+                    <div class="hero__decoration-circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section features">
+            <div class="container features__grid">
+                <div class="feature-card">
+                    <img src="img/truck.svg" alt="Безкоштовна доставка" class="feature-icon">
+                    <h3>Безкоштовна доставка</h3>
+                </div>
+                <div class="feature-card">
+                    <img src="img/award.svg" alt="Схвалено ветеринарами" class="feature-icon">
+                    <h3>Товари, схвалені ветеринарами</h3>
+                </div>
+                <div class="feature-card">
+                    <img src="img/check.svg" alt="Гарантія задоволення" class="feature-icon">
+                    <h3>100% Гарантія задоволення</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="section categories">
+            <div class="container">
+                <h2 class="section__title">Купуйте за категоріями</h2>
+                <p class="section__subtitle">Знайдіть ідеальні товари для кожного улюбленця у вашій родині</p>
+                <div class="categories__grid">
+                    <div class="category-card">
+                        <img src="img/cat-food.png" alt="Корм для котів" class="category-img">
+                        <h3>Харчування</h3>
+                        <a href="#" class="button button--category">Переглянути товари</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="img/dog-toy.png" alt="Іграшка для собак" class="category-img">
+                        <h3>Іграшки та Аксесуари</h3>
+                        <a href="#" class="button button--category">Переглянути товари</a>
+                    </div>
+                    <div class="category-card">
+                        <img src="img/fish.png" alt="Товари для рибок" class="category-img">
+                        <h3>Товари для Риб</h3>
+                        <a href="#" class="button button--category">Переглянути товари</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="section about">
+            <div class="container about__grid">
+                <div class="about__text-content">
+                    <h2 class="section__title-left">Про магазин Щасливі Лапки</h2>
+                    <p class="text-lg text-gray-700">
+                      У магазині Щасливі Лапки ми віримо, що кожен улюбленець заслуговує на найкраще. Наша місія — надавати власникам тварин преміум, натуральні та екологічні товари, які сприяють здоров'ю та щастю їхніх коханих компаньйонів.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                      Заснований пристрасними любителями тварин, ми ретельно добираємо кожен продукт, щоб переконатися, що він відповідає нашим високим стандартам якості та безпеки. Від органічних ласощів до екологічних іграшок — ми прагнемо позитивно впливати на життя тварин та їхніх сімей.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h4 class="stat-value">500+</h4>
+                            <p class="stat-label">Товарів</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4 class="stat-value">10К+</h4>
+                            <p class="stat-label">Задоволених клієнтів</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4 class="stat-value">5 років</h4>
+                            <p class="stat-label">У бізнесі</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__image-container">
+                    <img src="img/owner-happy.jpg" alt="Щасливий власник домашнього улюбленця" class="about__image">
+                    <div class="about__decoration-circle"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="reviews" class="section reviews bg-soft-gray">
+            <div class="container">
+                <h2 class="section__title">Що кажуть наші клієнти</h2>
+                <p class="section__subtitle text-center">Реальні історії від щасливих власників домашніх улюбленців</p>
+                
+                <div class="reviews__grid">
+                    <div class="review-card">
+                        <div class="rating">★★★★★</div>
+                        <p class="review__quote">"Якість товарів на висоті, а доставка дуже швидка. Мої коти ніколи не були здоровішими!"</p>
+                        <p class="review__author">Софія Коваленко</p>
+                        <p class="review__location">Київ</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="rating">★★★★★</div>
+                        <p class="review__quote">"Швидка доставка, чудове обслуговування, і мій собака просто обожнює свої нові іграшки. Обов'язково замовлю знову!"</p>
+                        <p class="review__author">Андрій Мельник</p>
+                        <p class="review__location">Львів</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="rating">★★★★★</div>
+                        <p class="review__quote">"Я була перевантажена всіма варіантами, але тут допомогли. Мій акваріум ніколи не виглядав краще!"</p>
+                        <p class="review__author">Олена Петренко</p>
+                        <p class="review__location">Одеса</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container contact__grid">
+                
+                <div class="contact__info-block">
+                    <h2 class="section__title-left">Контактна інформація</h2>
+                    
+                    <div class="contact__detail">
+                        <h3 class="contact__detail-title">Адреса</h3>
+                        <p class="contact__detail-text">вул. Хрещатик, 123, Київ, 01001</p>
+                    </div>
+                    <div class="contact__detail">
+                        <h3 class="contact__detail-title">Телефон</h3>
+                        <p class="contact__detail-text">+38 (044) 123-4567</p>
+                    </div>
+                    <div class="contact__detail">
+                        <h3 class="contact__detail-title">Email</h3>
+                        <p class="contact__detail-text">hello@shchaslyvilapky.com.ua</p>
+                    </div>
+
+                    <h3 class="contact__detail-title mt-4">Слідкуйте за нами</h3>
+                    <div class="flex gap-4 mt-2 social-icons-container">
+                         <div class="social-icon social-icon--fb">
+                            <img src="img/facebook.svg" alt="Facebook" style="width: 32px;">
+                         </div>
+                         <div class="social-icon social-icon--insta">
+                            <img src="img/instagram.svg" alt="Instagram" style="width: 32px;">
+                         </div>
+                    </div>
+                </div>
+                
+                <div id="mapid" class="contact__map-wrapper"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <div class="footer__social">
+                <img src="img/facebook.svg" alt="Facebook" style="width: 24px;">
+                <img src="img/instagram.svg" alt="Instagram" style="width: 24px;">
+            </div>
+            <p class="footer__copyright">© 2025 Щасливі Лапки. Всі права захищені. Розроблено студентом.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
